@@ -20,6 +20,7 @@ count( tablename, column = *)
 select( TableName , [col1, col2, col3], alias = "")
 
 join( tablename , PKcolumn, FKcolumn, "left" "right" "inner" "")
+```
 where([
          [column, "=", "or"], [column, "!=", "and"], [column, "like"],
          [
@@ -27,6 +28,7 @@ where([
              [column, "LIKE"]
          ] for grouping
          , [column, "="] ]);
+```
 order(column, $type = "a for ASC and d for DESC, a is default")
 
 insert(tablename, array of columns) the function will make columnname VALUES :columnname
